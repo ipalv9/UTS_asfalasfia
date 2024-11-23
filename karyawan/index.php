@@ -34,7 +34,7 @@
                 <?php
                 include("../koneksi.php");
 
-                $tampil = "SELECT * FROM manager";
+                $tampil = "SELECT * FROM karyawan";
 
                 $proses = mysqli_query($koneksi, $tampil);
                 $nomor =1;
@@ -43,8 +43,10 @@
                 ?>
                 <tr>
                     <th scope="row"><?=$nomor++?></th>
-                    <td><?=$data['kode']?></td>
-                    <td><?=$data['jurusan']?></td>
+                    <td><?=$data['nama_karyawan']?></td>
+                    <td><?=$data['jabatan']?></td>
+                    <td><?=$data['tanggal_masuk']?></td>
+                    <td><?=$data['gaji']?></td>
                     <td>
                         <a class="btn btn-info" href=""><i class="fa-solid fa-pen-to-square"></i></a>
                         <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id']?>">
@@ -59,7 +61,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            Yakin Data <b><?=$data['jurusan']?></b> ingin dihapus?
+                            Yakin Data <b><?=$data['karyawan']?></b> ingin dihapus?
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>

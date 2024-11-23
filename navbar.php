@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/UTS_asfalasfia/UTS_asfalasfia/index.php">Beranda</a>
+          <a class="nav-link active" aria-current="page" href="/asfalasfia/asfalasfia/index.php">Beranda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Denah</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/UTS_asfalasfia/UTS_asfalasfia/karyawan">Data Karyawan</a>
+          <a class="nav-link active" aria-current="page" href="/asfalasfia/asfalasfia/karyawan">Data Karyawan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Pengaturan</a>
