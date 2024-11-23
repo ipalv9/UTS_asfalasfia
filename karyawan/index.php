@@ -48,37 +48,39 @@
                     <td><?=$data['tanggal_masuk']?></td>
                     <td><?=$data['gaji']?></td>
                     <td>
-                        <a class="btn btn-info" href=""><i class="fa-solid fa-pen-to-square"></i></a>
-                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id']?>">
-                        <i class="fa-solid fa-trash"></i>
-                        </button>  
-                        <!-- Modal -->
-                    <div class="modal fade" id="hapus<?=$data['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Peringatan</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Yakin Data <b><?=$data['karyawan']?></b> ingin dihapus?
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                            <a href="hapus.php?xyz=<?=$data['id']?>" class="btn btn-danger">Hapus</a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>          
-                   </td>
-                </tr>
-                <?php
-                }
-                ?>
-            </tbody>
+                    
+                    <a class="btn btn-info" href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="">
+                            <i class="fa-solid fa-trash"></i>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="hapus<?=$data['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Peringatan</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Yakin data <b><?=$data['jabatan']?></b> ingin dihapus?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                    <a href="hapus.php?xyz=<?=$data['id']?>" class="btn btn-danger">Hapus</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <?php
+                    }
+                    ?>
+                </tbody>
             </table>
             </div>
-        </div>
+            </div>
         </div>
     </div>
 </div>

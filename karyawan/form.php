@@ -24,13 +24,21 @@
            <input type="text" name="nama_karyawan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-           <label for="exampleInputEmail1" class="form-label">Jabatan/label>
+           <label for="exampleInputEmail1" class="form-label">Jabatan</label>
            <input type="text" name="jabatan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
-        <div class="mb-3">
-           <label for="exampleInputEmail1" class="form-label">Nama Jurusan</label>
-           <input type="text" name="namajurusan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
+            <div class="card-body">
+            <div class="mb-3">
+           <label for="exampleInputEmail1" class="form-label">Tanggal Masuk</label>
+           <input type="date" name="tanggal_masuk" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+        </div>
+            <div class="card-body">
+            <div class="mb-3">
+           <label for="exampleInputEmail1" class="form-label">Gaji</label>
+           <input type="text" name="gaji" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
         <button type="submit" class="btn btn-info btn-sm">submit</button>
         <a href="index.php" class="btn btn-warning btn-sm">Back</a>
       </div>
